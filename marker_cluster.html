@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Marker Clustering</title>
-    <style>
-      #map {
+<head>
+  <!-- disini lokasi style atau script-->
+  <style>
+  	 #map {
         height: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
@@ -14,32 +12,39 @@
         margin: 0;
         padding: 0;
       }
-   </style>
-  </head>
-  <body>
-  	<div id="map"></div>
-  	<script>
+ </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  	<script> 
   		function initMap() {
-  			var map = new google.maps.Map(document.getElementById('map'), {
-          		zoom: 3,
-          		center: {lat: -28.024, lng: 140.887}
-        	});
+  			var map = new google.maps.Map(  			
+  				document.getElementById('map'), 
+  				{
+          			zoom: 3,
+                center: {lat: -28.024, lng: 140.887}
+        		}
+        	);
 
-        	var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        	 var markers = locations.map(function(location, i) {
-          		return new google.maps.Marker({
-            		position: location,
-            		label: labels[i % labels.length]
-          		});
-        	});
+        //data untuk melabeli marker, 1 marker 1 lhuruf
+         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-        	 var markerCluster = new MarkerClusterer(map, markers,
+         //proses membuat markers diambil dari data locations + labels
+         var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+         //meletakkan marker dalam peta menggunakan MarkerCluster
+          var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
 
-        	 
-  		}
 
-  		var locations = [
+      var locations = [
         {lat: -31.563910, lng: 147.154312},
         {lat: -33.718234, lng: 150.363181},
         {lat: -33.727111, lng: 150.371124},
@@ -62,17 +67,19 @@
         {lat: -42.734358, lng: 147.439506},
         {lat: -42.734358, lng: 147.501315},
         {lat: -42.735258, lng: 147.438000},
-        {lat: -43.999792, lng: 170.463352},
-      ];
+        {lat: -43.999792, lng: 170.463352}
+      ]
+
 
   	</script>
 
-  	<!-- library of markerclusterer  -->
-  	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    <!-- Mengambil Librari MarkerCluster dari google   -->
+    <script src="markerclusterer.js"></script>    
+
+
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZTmck7VZQYre5i5TnIA4yZna4V8UxChw&callback=initMap">
     </script>
 
-  	 <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5MQEMV7GBZFdjyWUh28l3aQd1BKVcXo8&callback=initMap">
-    </script>
-  </body>
- </html>
+</body>
+</html>
