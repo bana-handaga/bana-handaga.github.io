@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+  <!-- disini lokasi style atau script-->
+  <style>
+  	 #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+ </style>
+
+
+
+</head>
+<body>
+  <div id="map"></div>
+
+  	<script> 
+      var map
+  		function initMap() {
+  			map = new google.maps.Map(  			
+  				document.getElementById('map'), 
+  				{
+          			zoom: 2,
+                center: new google.maps.LatLng(2.8,-187.3),
+                mapTypeId: 'terrain'
+        		}
+        	);
+		    //import geojson
+        var script = document.createElement('script');
+        script.src = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp';
+        document.getElementsByTagName('head')[0].appendChild(script);
+
+        // map.data adalah alternatif lain untuk memanipulasi Marker
+        map.data.setStyle(function(feature) {
+          //membaca besarnya gempa dalam variabel "mag"
+          var magnitude = feature.getProperty('mag');
+          return {
+            icon: getCircle(magnitude)
+          };
+        });
+
+      }  //end blok InitMap
+
+      function getCircle(magnitude) {
+
+        if (magnitude<5) {
+        return {
+          path: google.maps.SymbolPath.CIRCLE, //bentuk obyek
+          fillColor: 'yellow',  //warna pengisi
+          fillOpacity: .2,  //transparansi
+          scale: Math.pow(2, magnitude) / 2,  //diameter 
+          strokeColor: 'white', //warna garis tepi
+          strokeWeight: .5    //ketebalan garis tepi
+        }; } else { 
+        return {
+          path: google.maps.SymbolPath.CIRCLE, //bentuk obyek
+          fillColor: 'red',  //warna pengisi
+          fillOpacity: .2,  //transparansi
+          scale: Math.pow(2, magnitude) / 2,  //diameter 
+          strokeColor: 'white', //warna garis tepi
+          strokeWeight: .5    //ketebalan garis tepi
+        }; }
+      }
+
+      function eqfeed_callback(results) {
+        map.data.addGeoJson(results);
+      }
+
+
+  	</script>
+
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZTmck7VZQYre5i5TnIA4yZna4V8UxChw&callback=initMap">
+    </script>
+
+</body>
+</html>
