@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head></head>
+  <head>
+    <script> 
+      function timedRefresh(timeoutPeriod) {
+        setTimeout("location.reload(true);",timeoutPeriod);
+      }
+      window.onload = timedRefresh(5000);
+    </script>
+  </head>
   <body>
     <h1>Computer Vision Resourses</h1>
     <h2>Tutorials</h2>
