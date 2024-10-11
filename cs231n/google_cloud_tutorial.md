@@ -14,7 +14,7 @@ Don't forget to ***stop your instance*** when you are done (by clicking on the s
 If you follow our instructions below correctly, you should be able to restart your instance and the downloaded software will still be available.
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sadpuppy_nocredits.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/sadpuppy_nocredits.png'>
 </div>
 
 
@@ -28,25 +28,25 @@ This tutorial goes through how to set up your own Google Compute Engine (GCE) in
 First, if you don't have a Google Cloud account already, create one by going to the [Google Cloud homepage](https://cloud.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=2015-q2-cloud-na-gcp-skws-freetrial-en&gclid=CP2e4PPpiNMCFU9bfgodGHsA1A "Title") and clicking on **Compute**. When you get to the next page, click on the blue **TRY IT FREE** button. If you are not logged into gmail, you will see a page that looks like the one below. Sign into your gmail account or create a new one if you do not already have an account. 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-launching-screen.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-launching-screen.png'>
 </div>
 
 Click the appropriate **yes** or **no** button for the first option, and check **yes** for the second option after you have read the required agreements. Press the blue **Agree and continue** button to continue to the next page to enter the requested information (your name, billing address and credit card information). Remember to select "**Individual**" as "Account Type":
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-register-info.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-register-info.png'>
 </div>
 
 Once you have entered the required information, press the blue **Start my free trial** button. You will be greeted by a page like this: 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-welcome-screen.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-welcome-screen.png'>
 </div>
 
 Press the "Google Cloud Platform" (in red circle), and it will take you to the main dashboard:
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-dashboard-screen.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-dashboard-screen.png'>
 </div>
 
 To change the name of your project, click on [**Go to project settings**](console.cloud.google.com/iam-admin/settings/project) under the **Project info** section.
@@ -58,13 +58,13 @@ For all assignments and the final project, we provide you with a pre-configured 
 Go to **Compute Engine**, then **Images** and click on the blue **Create Image** button at the top of the page. See the screenshot below.
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-create-image.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-create-image.png'>
 </div>
 
 Enter your preferred name in the **Name** field. Mine is called **cs231n-image**. Select **Cloud Storage file** for **Source**, enter **cs231n-repo/deep-ubuntu.tar.gz** and click on the blue **Create** button. See the screenshot below. It will take a few minutes for your image to be created (about 10-15 in our experience, though your mileage may vary). 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-config-image.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-config-image.png'>
 </div>
 
 ## Launch a Virtual Instance ##
@@ -74,7 +74,7 @@ To launch a virtual instance, go to the **Compute Engine** menu on the left colu
 Then click on the blue **Create** button on the next page. This will take you to a page that looks like the screenshot below. **(NOTE: Please carefully read the instructions in addition to looking at the screenshots. The instructions tell you exactly what values to fill in).**
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-create-instance.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-create-instance.png'>
 </div>
 
 Make sure that the Zone is set to be **us-west1-b** (especially for assignments where you need to use GPU instances). Under **Machine type** pick the **8 vCPUs** option. Click on the **customize** button under **Machine type** and make sure that the number of cores is set to 8 and the number of GPUs is set to **None** (we will not be using GPUs in assignment 1. GPU will be covered later in this tutorial). 
@@ -82,7 +82,7 @@ Make sure that the Zone is set to be **us-west1-b** (especially for assignments 
 Click on the **Change** button under **Boot disk**, choose **Custom images**, you will see this screen:
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-select-image.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-select-image.png'>
 </div>
 
 Select the image you created in the previous step, here it's **cs231n-image**. Also increase the boot disk size as you see fit. Click **Select** and you will get back to the "create instance" screen.
@@ -90,13 +90,13 @@ Select the image you created in the previous step, here it's **cs231n-image**. A
 Check **Allow HTTP traffic** and **Allow HTTPS traffic**. Expand the **Management, disks, networking, SSH keys** menu if it isn't visible, select **Disks** tab, and uncheck **Delete boot disk when instance is deleted**.
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-check-https.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-check-https.png'>
 </div>
 
 Click on the blue **Create** button at the bottom of the page. You should have now successfully created a Google Compute Instance, it might take a few minutes to start running. When the instance is ready, your screen should look something like the one below. When you want to stop running the instance, click on the blue stop button above. 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-instance-started.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-instance-started.png'>
 </div>
 
 Take note of your instance name, you will need it to ssh from your laptop. 
@@ -126,7 +126,7 @@ The command will download a git repo, patch your `.bashrc` and copy a jupyter no
 When the command finishes without error, run `which python` on the command line and it should report `/home/shared/anaconda3/bin/python`. See screenshot:
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-setup-script.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-setup-script.png'>
 </div>
 
 (don't worry about the Tensorflow warning message)
@@ -152,25 +152,25 @@ Many of the assignments will involve using Jupyter Notebook. Below, we discuss h
 ### Getting a Static IP Address ###
 Change the Extenal IP address of your GCE instance to be static (see screenshot below). 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-external-ip.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-external-ip.png'>
 </div>
 
 To Do this, click on the 3 line icon next to the **Google Cloud Platform** button on the top left corner of your screen, go to **VPC network** and **External IP addresses** (see screenshot below).
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-networking-external-ip.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-networking-external-ip.png'>
 </div>
 
 To have a static IP address, change **Type** from **Ephemeral** to **Static**. Enter your prefered name for your static IP, ours is `cs231n-ip` (see screenshot below). And click on Reserve. Remember to release the static IP address when you are done because according to [this page](https://jeffdelaney.me/blog/running-jupyter-notebook-google-cloud-platform/ "Title") Google charges a small fee for unused static IPs. 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-networking-external-ip-naming.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-networking-external-ip-naming.png'>
 </div>
 
 Take note of your Static IP address (circled on the screenshot below). We use 35.185.240.182 for this tutorial.
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-networking-external-ip-address.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-networking-external-ip-address.png'>
 </div>
 
 ### Adding a Firewall rule ###
@@ -180,13 +180,13 @@ One last thing you have to do is adding a new firewall rule allowing TCP acess t
 Click on the 3-line icon at the top of the page next to **Google Cloud Platform**. On the menu that pops up on the left column, go to **VPC network** and **Firewall rules** (see the screenshot below). 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-networking-firewall-rule.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-networking-firewall-rule.png'>
 </div>
 
 Click on the blue **CREATE FIREWALL RULE** button. Enter whatever name you want: we use cs231n-rule. Select "All instances in the network" for **Targets** (if the menu item exists). Enter `0.0.0.0/0` for **Source IP ranges** and `tcp:<port-number>` for **Specified protocols and ports** where `<port-number>` is the number you used above. Click on the blue **Create** button. See the screenshot below.
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-networking-firewall-rule-create.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-networking-firewall-rule-create.png'>
 </div>
  
 
@@ -204,7 +204,7 @@ If you simply run `jupyter-notebook` without any command line arguments, it will
 The command should block your stdin and display something like:
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-jupyter-console.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-jupyter-console.png'>
 </div>
 
 The important line (underscored in red) has the token for you to login from laptop. Replace the "localhost" part with your external IP address created in prior steps. In our example, the URL should be 
@@ -218,7 +218,7 @@ If there is no token, simply go to `http://35.185.240.182:7000`.
 If you visit the above URL on your local browser, you should see something like the screen below. 
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cloud-jupyter-screen.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cloud-jupyter-screen.png'>
 </div>
 
 ## Submission: Transferring Files From Your Instance To Your Computer ##
