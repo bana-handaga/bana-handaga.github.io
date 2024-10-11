@@ -6,7 +6,7 @@ permalink: /poster-session/
 
 # 2017 Stanford CS231n Poster Session #
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/bing.jpg'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/bing.jpg'>
 </div>
 
 * **Location: [Bing Concert Hall](https://www.google.com/maps/place/Bing+Concert+Hall/@37.4320543,-122.1660855,15z/data=!4m5!3m4!1s0x0:0xf5f2c6a783cabf93!8m2!3d37.4320543!4d-122.1660855, "title")**
@@ -20,7 +20,7 @@ The topics range from Generative Adversarial Networks (GANs), healthcare and med
 
 ### Bing Map: See the Project IDs in the list below and find them on the map ###
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/map.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/map.png'>
 </div>
 
 

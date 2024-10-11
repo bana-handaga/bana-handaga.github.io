@@ -5,7 +5,7 @@ permalink: /poster-session-2018/
 ---
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/huang.jpg'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/huang.jpg'>
 </div>
 
 * **Location**: [Jen-Hsun Huang Engineering Center](https://www.google.com/maps/place/Jen-Hsun+Huang+Engineering+Center/@37.4277284,-122.1763852,17z/data=!3m1!4b1!4m5!3m4!1s0x808fbb2ad1efaf1d:0xe4be58a43178043f!8m2!3d37.4277284!4d-122.1741965)
