@@ -1,8 +1,8 @@
 import markdown
 import os
 
-files = os.listdir('./setup-instructions/')
+files = os.listdir('./python-numpy-tutorial/')
 
 for filename in files:
     print (filename)
-    markdown.markdownFromFile(input='./setup-instructions/'+filename, output='./setup-instructions/'+filename.replace('.md', '.html'))
+    markdown.markdownFromFile(input='./python-numpy-tutorial/'+filename, output='./python-numpy-tutorial/'+filename.replace('.md', '.html'))

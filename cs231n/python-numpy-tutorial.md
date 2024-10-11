@@ -975,8 +975,8 @@ imsave('assets/cat_tinted.jpg', img_tinted)
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cat.jpg'>
-  <img src='/assets/cat_tinted.jpg'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cat.jpg'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cat_tinted.jpg'>
   <div class='figcaption'>
     Left: The original image.
     Right: The tinted and resized image.
@@ -1054,7 +1054,7 @@ plt.show()  # You must call plt.show() to make graphics appear.
 Running this code produces the following plot:
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sine.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/sine.png'>
 </div>
 
 With just a little bit of extra work we can easily plot multiple lines
@@ -1079,7 +1079,7 @@ plt.legend(['Sine', 'Cosine'])
 plt.show()
 ```
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sine_cosine.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/sine_cosine.png'>
 </div>
 
 You can read much more about the `plot` function
@@ -1118,7 +1118,7 @@ plt.show()
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sine_cosine_subplot.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/sine_cosine_subplot.png'>
 </div>
 
 You can read much more about the `subplot` function
@@ -1152,5 +1152,5 @@ plt.show()
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cat_tinted_imshow.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/cat_tinted_imshow.png'>
 </div>
