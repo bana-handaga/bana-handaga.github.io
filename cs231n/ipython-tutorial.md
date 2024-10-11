@@ -40,7 +40,7 @@ directory:
 If you click through to a notebook file, you will see a screen like this:
 
 <div class='fig figcenter'>
-  <img src='htpps://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-1.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-1.png'>
 </div>
 
 An IPython notebook is made up of a number of **cells**. Each cell can contain
@@ -50,14 +50,14 @@ will be displayed beneath the cell. For example, after running the first cell
 the notebook looks like this:
 
 <div class='fig figcenter'>
-  <img src='htpps://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-2.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-2.png'>
 </div>
 
 Global variables are shared between cells. Executing the second cell thus gives
 the following result:
 
 <div class='fig figcenter'>
-  <img src='htpps://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-3.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-3.png'>
 </div>
 
 By convention, IPython notebooks are expected to be run from top to bottom.
@@ -65,14 +65,14 @@ Failing to execute some cells or executing cells out of order can result in
 errors:
 
 <div class='fig figcenter'>
-  <img src='htpps://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-error.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/ipython-tutorial/notebook-error.png'>
 </div>
 
 After you have modified an IPython notebook for one of the assignments by
 modifying or executing some of its cells, remember to **save your changes!**
 
 <div class='fig figcenter'>
-  <img src='htpps://bana-handaga.github.io/cs231n/assets/ipython-tutorial/save-notebook.png'>
+  <img src='https://bana-handaga.github.io/cs231n/assets/ipython-tutorial/save-notebook.png'>
 </div>
 
 This has only been a brief introduction to IPython notebooks, but it should
