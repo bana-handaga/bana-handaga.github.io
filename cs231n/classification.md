@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /classification/
+permalink: cs231n/classification/
 ---
 
 This is an introductory lecture designed to introduce people from outside of Computer Vision to the Image Classification problem, and the data-driven approach. The Table of Contents:
