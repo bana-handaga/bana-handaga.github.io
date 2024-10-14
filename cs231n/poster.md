@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS231n Poster Session
-permalink: /poster-session/
+permalink: cs231n/poster/
 ---
 
 # 2017 Stanford CS231n Poster Session #

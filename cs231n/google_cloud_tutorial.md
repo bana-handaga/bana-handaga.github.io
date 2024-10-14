@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Google Cloud Tutorial
-permalink: /gce-tutorial/
+permalink: cs231n/google_cloud_tutorial/
 ---
 # Google Cloud Tutorial #
 

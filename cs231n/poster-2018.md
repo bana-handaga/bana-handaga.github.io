@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CS231n Poster Session 2018
-permalink: /poster-session-2018/
+permalink: cs231n/poster-2018/
 ---
 
 <div class='fig figcenter fighighlight'>

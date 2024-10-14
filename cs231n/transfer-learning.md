@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /transfer-learning/
+permalink: cs231n/transfer-learning/
 ---
 
 (These notes are currently in draft form and under development)

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /convolutional-networks/
+permalink: cs231n/convolutional-networks/
 ---
 
 Table of Contents:

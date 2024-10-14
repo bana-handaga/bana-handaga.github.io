@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /linear-classify/
+permalink: cs231n/linear-classify/
 ---
 
 Table of Contents:

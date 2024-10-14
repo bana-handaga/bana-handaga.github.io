@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terminal.com Tutorial
-permalink: /terminal-tutorial/
+permalink: cs231n/terminal-tutorial/
 ---
 For the assignments, we offer an option to use [Terminal](https://www.stanfordterminalcloud.com) for developing and testing your implementations. Notice that we're not using the main Terminal.com site but a subdomain which has been assigned specifically for this class. [Terminal](https://www.stanfordterminalcloud.com) is an online computing platform that allows us to access pre-configured command line environments. Note that, it's not required to use [Terminal](https://www.stanfordterminalcloud.com) for your assignments; however, it might make life easier with all the required dependencies and development toolkits configured for you.
 

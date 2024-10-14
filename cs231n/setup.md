@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Setup Instructions
-permalink: /setup-instructions/
+permalink: cs231n/setup-instructions/
 ---
 
 ## Setup

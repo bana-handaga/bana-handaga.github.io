@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /optimization-1/
+permalink: cs231n/optimization-1/
 ---
 
 Table of Contents:

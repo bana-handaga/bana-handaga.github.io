@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /neural-networks-2/
+permalink: cs231n/neural-networks-2/
 ---
 
 Table of Contents:

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /convnet-tips/
+permalink: cs231n/convnet-tips/
 ---
 
 <a name='overfitting'></a>

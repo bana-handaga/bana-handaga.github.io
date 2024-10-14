@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /neural-networks-case-study/
+permalink: cs231n/neural-networks-case-study/
 ---
 
 Table of Contents:

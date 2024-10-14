@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /understanding-cnn/
+permalink: cs231n/understanding-cnn/
 ---
 
 <a name='vis'></a>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IPython Tutorial
-permalink: /ipython-tutorial/
+permalink: cs231n/ipython-tutorial/
 ---
 
 ***(Note: some of the screenshots here may be out-of-date. However, this should still prove
