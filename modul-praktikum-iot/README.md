@@ -1,4 +1,8 @@
 
+download kode 
+## [https://bana-handaga.github.io/modul-praktikum-iot/Modul-Praktikum-IoT.zip] Modul-Praktikum-IoT.zip
+
+
 ## Repository Modul Praktikum IoT
 
 ## [Modul - 01](modul01) - Menyiapkan Lingkungan pengembangan
@@ -21,6 +25,8 @@
 
 ## [Modul - 10](modul10) - Gerakan dengan Servos, Motors, dan Steppers
 
+
+
 ## [Modul - 11](modul11) - Mengukur Jarak dan Mendeteksi Gerakan
 
 ## [Modul - 12](modul12) - Konsep Pemrograman IoT Tingkat Lanjut – Thread, AsyncIO, dan Event Loop
@@ -28,4 +34,5 @@
 ## [Modul - 13](modul13) - Plafform IoT dan Automation 
 
 ## [Modul - 14](modul14) - Menggabungkan semuanya
+
 
