@@ -27,5 +27,5 @@ six==1.14.0
 smbus2==0.3.0
 spidev==3.4
 urllib3==1.25.8
-Werkzeug==1.0.0
+Werkzeug==2.2.3
 ws2812==1.0.0
